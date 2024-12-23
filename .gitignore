@@ -5,7 +5,7 @@
 /include/
 /lib/
 /lib64/
-/pyvenv.cfg
+pyvenv.cfg
 /bashate.egg-info/
 /build/
 
@@ -13,3 +13,5 @@
 __pycache__/
 *.pyc
 *.pyo
+*.egg-info/
+
