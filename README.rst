@@ -58,3 +58,54 @@ not be used
 - E042: local declaration hides errors
 - E043: arithmetic compound has inconsistent return semantics
 - E044: Use [[ for =~,<,> comparisions
+
+
+===============================
+   Installation Instructions
+===============================
+
+Follow these steps to install bashate on a Debian-based system:
+
+1. **Install Dependencies**:
+
+Ensure you have `pip` and `virtualenv` installed:
+
+```sh
+y | sudo apt update && sudo apt upgrade
+y | sudo apt install python3-pip python3-venv
+```
+
+2. **Clone the Repository**:
+
+Clone the bashate repository from the source:
+
+```sh
+git clone https://opendev.org/openstack/bashate.git
+cd bashate
+```
+
+3. **Create and Activate a Virtual Environment**:
+
+Create a virtual environment directly within the project directory:
+
+```sh
+python3 -m venv .
+source ./bin/activate
+```
+
+4. **Install bashate**:
+
+Install the dependencies and bashate itself:
+
+```sh
+pip install -r requirements.txt
+pip install .
+```
+
+5. **Verify Installation**:
+
+Ensure bashate is installed correctly by checking the version:
+
+```sh
+bashate --version
+```
